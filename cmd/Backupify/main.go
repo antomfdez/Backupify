@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/antomfdez/Backupify/internal/testmodule"
+	"github.com/antomfdez/Backupify/internal/BackupTable"
 )
 
 func main() {
-	testmodule.Hello()
+	BackupTable.Table()
 }
