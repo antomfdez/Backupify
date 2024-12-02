@@ -36,6 +36,8 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 			return m, tea.Batch(
 				tea.Printf("Let's go to %s!", m.table.SelectedRow()[1]),
 			)
+    case "/":
+      Filter()
 		}
 	}
 	m.table, cmd = m.table.Update(msg)
